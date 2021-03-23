@@ -1,0 +1,5 @@
+node_modules
+config.json
+running.json
+.reg/bin
+.reg/etc
