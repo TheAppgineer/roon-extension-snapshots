@@ -11,9 +11,10 @@ RUN apk add --no-cache tzdata git bash && \
     apk del bash && \
     mkdir -p .config && \
     ln -s .config/config.json config.json && \
+    ln -s .config/running.json running.json && \
     chown -R node:node .
 
-VOLUME .config
+VOLUME /home/node/.config
 
 USER node
 

@@ -8,7 +8,7 @@ EXTENSION_ID=com.theappgineer.extension-snapshots
 NAME=roon-extension-snapshots
 
 # Set the FRIENDLY_NAME variable to a more readable name for your extension
-FRIENDLY_NAME="Roon Extension Snapshots"
+FRIENDLY_NAME="Extension Snapshots"
 
 # Set the DESCRIPTION variable to a single line string that summarizes the function of your extension
 DESCRIPTION="Snapshots of npm-based Roon Extensions"

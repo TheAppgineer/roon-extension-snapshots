@@ -33,7 +33,7 @@ var last_is_error;
 
 var roon = new RoonApi({
     extension_id:        'com.theappgineer.extension-snapshots',
-    display_name:        "Roon Extension Snapshots",
+    display_name:        "Extension Snapshots",
     display_version:     "0.1.0",
     publisher:           'The Appgineer',
     email:               'theappgineer@gmail.com',
