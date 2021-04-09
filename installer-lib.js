@@ -58,15 +58,13 @@ function ApiExtensionInstaller(callbacks) {
         }
     }
 
-    if (_check_prerequisites()) {
-        _query_installs(() => {
-            _set_status("Starting Roon Extension Manager...", false);
+    _query_installs(() => {
+        _set_status("Starting Roon Extension Manager...", false);
 
-            _load_repository();
+        _load_repository();
 
-            callbacks.started && callbacks.started();
-        });
-    }
+        callbacks.started && callbacks.started();
+    });
 }
 
 ApiExtensionInstaller.prototype.get_extensions_by_category = function(category_index) {
@@ -191,24 +189,6 @@ function _create_action_pair(action) {
         title: action_strings[action],
         value: action
     };
-}
-
-function _check_prerequisites() {
-    let execSync = require('child_process').execSync;
-    let git_version = execSync('git --version').toString();
-    let npm_version = execSync('npm --version').toString();
-
-    if (git_version) {
-        git_version = git_version.split(" ")[2];
-
-        if (npm_version) {
-            return true;
-        }
-    }
-
-    _set_status("Please install git and npm", true);
-
-    return false;
 }
 
 function _load_repository() {
