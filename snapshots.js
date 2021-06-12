@@ -34,7 +34,7 @@ var last_is_error;
 var roon = new RoonApi({
     extension_id:        'com.theappgineer.extension-snapshots',
     display_name:        "Extension Snapshots",
-    display_version:     "0.1.1",
+    display_version:     "0.1.2",
     publisher:           'The Appgineer',
     email:               'theappgineer@gmail.com',
     website:             'https://community.roonlabs.com/t/roon-extension-manager-v1-0-beta-program/151438',

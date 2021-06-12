@@ -5,7 +5,6 @@ PREFIX=$(npm config get prefix)
 
 declare -a authors=( \
     "bsc101" \
-    "bsc101" \
     "docbobo" \
     "docbobo" \
     "docbobo" \
@@ -16,7 +15,6 @@ declare -a authors=( \
 )
 
 declare -a extensions=( \
-    "roon-extension-itroxs" \
     "roon-extension-rotel" \
     "roon-extension-arcam" \
     "roon-extension-denon" \
