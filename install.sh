@@ -32,5 +32,10 @@ do
     cd $PREFIX/lib/node_modules/${extensions[$i]}
     mkdir -p /home/node/.config/${extensions[$i]}
     ln -s /home/node/.config/${extensions[$i]}/config.json config.json
+
+    if [ "${extensions[$i]}" = "roon-web-controller" ]; then
+        ln -s /home/node/.config/${extensions[$i]}/local.json config/local.json
+    fi
+
     cd $PWD
 done
